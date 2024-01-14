@@ -1,9 +1,8 @@
 // Validate person name
 
 const isValidate = (T) => {
-  if (!T) return false;
-  if (typeof T !== 'string') return false;
-  if (!T.includes(' ')) return false;
+  if (!T || typeof T !== 'string' || !T.includes(' '))
+    return false;
   {
     for (C of T) {
       if (C === ' ') continue;
