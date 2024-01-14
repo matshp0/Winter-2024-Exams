@@ -2,7 +2,7 @@
 
 const parseIP = (ip) => {
   const result = [];
-  if (ip === '') return;
+  if (!ip) return;
   const digits = ip.split('.');
   if (digits.length !== 4) return;
   j = 0;
