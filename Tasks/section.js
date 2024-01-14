@@ -1,11 +1,11 @@
 // Split string into array by the first occurrence of separator
 
-SectionString = (s, t) => {
-  i = s.indexOf(t);
-  if (i < 0 || t == '') {
-    return [s, ''];
+const SectionString = (str, separator) => {
+  const index = str.indexOf(separator);
+  if (index < 0 || separator == '') {
+    return [str, ''];
   } else {
-    return [s.slice(0, i), s.slice(i + t.length)];
+    return [str.slice(0, index), str.slice(i + separator.length)];
   }
 };
 

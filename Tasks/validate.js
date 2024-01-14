@@ -8,7 +8,7 @@ const isName = (str) => {
     if (!(charCode >= 97 && charCode <= 122))
       return false;
   }
-    return true;
+  return true;
 };
 
 module.exports = isName;
