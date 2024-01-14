@@ -1,13 +1,13 @@
 // Generate random password
 
-let GeneratePassword = (alphabet, length) => {
-  const MAX = alphabet.length;
-  key = '';
+const generatePassword = (alphabet, length) => {
+  const maxLength = alphabet.length;
+  let result = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    const index = Math.floor(Math.random() * maxLength);
+    result = result + alphabet[index];
   }
-  return key;
+  return result;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
