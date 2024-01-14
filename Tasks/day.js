@@ -1,6 +1,6 @@
 // Get day number
 
-let DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
 const parseDays = (str) => {
   for (let i = 0; i < DAYS.length; i++)
