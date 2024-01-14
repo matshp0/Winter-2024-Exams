@@ -2,11 +2,11 @@
 
 const reverseObject = (obj) => {
   const keys = Object.keys(obj);
-  keys.forEach((key) => {
+  for (const key of keys) {
     const value = obj[key];
     obj[value] = key;
     delete obj[key];
-  });
+  }
   return obj;
 };
 
