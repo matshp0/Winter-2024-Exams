@@ -1,14 +1,14 @@
 // Validate person name
 
-const isValidate = (T) => {
-  if (!T || typeof T !== 'string' || !T.includes(' '))
+const isName = (str) => {
+  if (!str || typeof str !== 'string' || !str.includes(' '))
     return false;
   {
-    for (C of T) {
-      if (C === ' ') continue;
+    for (const char of str) {
+      if (char === ' ') continue;
       if (
-        C.toLowerCase().charCodeAt(0) >= 97 &&
-        C.toLowerCase().charCodeAt(0) <= 122
+        char.toLowerCase().charCodeAt(0) >= 97 &&
+        char.toLowerCase().charCodeAt(0) <= 122
       ) {
       } else {
         return false;
@@ -18,4 +18,4 @@ const isValidate = (T) => {
   }
 };
 
-module.exports = isValidate;
+module.exports = isName;
