@@ -3,11 +3,10 @@
 const findIntersection = function intersection(object1, object2) {
   const keys = Object.keys(object1);
   for (const key of keys)
-    if (object1[key] === object2[key]) {
+    if (object1[key] === object2[key])
       object2[key] = object1[key];
-    } else {
+    else
       delete object1[key];
-    }
   return object1;
 };
 
