@@ -2,11 +2,9 @@
 
 const separateString = (str, separator) => {
   const index = str.indexOf(separator);
-  if (index < 0 || separator === '') {
+  if (index < 0 || separator === '')
     return [str, ''];
-  } else {
-    return [str.slice(0, index), str.slice(index + separator.length)];
-  }
+  return [str.slice(0, index), str.slice(index + separator.length)];
 };
 
 module.exports = separateString;
